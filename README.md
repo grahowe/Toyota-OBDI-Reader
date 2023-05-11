@@ -35,3 +35,4 @@ Great information for your reading and further research pleasure:
 
 CHANGE LOG:
 * 5-10-2023: Made initial commits. As of right now, this code does not work unless the car is in the ON position. It will not work if the car has been started and is running for some reason. If someone can troubleshoot this on an OBD1-compatible Toyota, please post it in the issues, or feel free to contact me!
+* 5-11-2023: Issues have been posted on the Arduino.cc forum (https://forum.arduino.cc/t/toyota-obdi-data-by-talofer99-please-help/1119118/8), Reddit (https://www.reddit.com/r/arduino/comments/13dt07r/toyota_obdi_reader_wip_please_help/, https://www.reddit.com/r/CarHacking/comments/13eq64v/1993_camry_obdi_data_reader_issues/). Kind of a dead end at this point but hopefully that will change soon!!!
