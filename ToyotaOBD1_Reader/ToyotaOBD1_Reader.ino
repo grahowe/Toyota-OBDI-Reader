@@ -6,6 +6,10 @@
 // Many thanks to GadgetFreak for the greate base code for the reasding of the data.
 // If you want to use invert line - note the comments on the MY_HIGH and the INPUT_PULLUP in the SETUP void.
 // As of 5-9-2023, this does NOT work on the 1993 Camry while the engine is running. Not sure why???
+// 5-12-2023 UPDATE: Electromagnetic interference from spark plugs, alternator, etc. may most likely be the culprit. This is why we cannot
+// get constant data streams from the ECU while the alternator is running, the spark plugs are sparking, etc. Have you ever wondered why your
+// ECU is in a metal box?????
+// Still trying to figure out an isolation circuit, but for now, I believe the problem is solved...
 
 
 //Very crucial to include the U8g library or else you won't have any output!!! Wire.h is included within U8g
