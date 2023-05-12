@@ -15,7 +15,7 @@ Here is the information contained in the 12 11-bit data sequence sections:
 * 0x05: Manifold Absolute Pressure (MAP, ***Now in PSI***)
 * 0x06: Engine Coolant Temp (ECT, ***Now in deg. F***)
 * 0x07: Throttle Position Sensor (TPS)
-* 0x08: Vehicle Speed (SPD) ***Now in MPH***
+* 0x08: Vehicle Speed (SPD, ***Now in MPH***)
 * 0x09 & 0x10: N/A
 * 0x11 & 0x12: Additional Binary Flags (Found in menu 3)
 
