@@ -19,7 +19,7 @@ Here is the information contained in the 12 11-bit data sequence sections:
 * 0x09 & 0x10: N/A
 * 0x11 & 0x12: Additional Binary Flags (Found in menu 3)
 
-Keep in mind that this is not as fast as the OBDII protocol but will still provide real-time data. The delay time is around 1.25 seconds per data frame.
+Keep in mind that this is not as fast as the OBDII protocol but will still provide real-time data. The delay time is around 1.25 seconds per data frame, or about 96 bps!
 
 Great information for your reading and further research pleasure:
 * https://forum.arduino.cc/t/reading-obd-1-data-from-toyota-corrola-1992/231151/39
