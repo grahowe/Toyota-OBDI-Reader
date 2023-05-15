@@ -22,8 +22,8 @@
 #define LED_PIN          13
 
 // I have inverted the Eng line using an Opto-Coupler, if yours isn't then reverse these low & high defines.
-#define  MY_HIGH  HIGH
-#define  MY_LOW   LOW
+#define  MY_HIGH  HIGH //LOW
+#define  MY_LOW   LOW //HIGH
 
 #define  TOYOTA_MAX_BYTES  24
 volatile uint8_t ToyotaNumBytes, ToyotaID;
