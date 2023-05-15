@@ -1,7 +1,7 @@
 This code property of talofer99. THIS IS NOT MY CODE!!! I have reposted this with modifications that I made. This is now available with Imperial units (degrees F for coolant temp, psi for MAP pressure, MPH for car speed) but is STILL A W.I.P!!!!
 
 Description:
-This code was made for OBD1-compliant Toyotas and Lexuses with the VF1/ENG, TE2, and E1 pins found in the Diagnostic Link Connector. Logic output voltage is never above 5VDC, which is plenty for an Arduino board to handle if operated via USB or +5V on the VIN pin. My circuit, in contrast with talofer99's, consists of only two components - an Arduino board of your choice and a 4-pin OLED display. The display is connected via pins A4 (SDA) and A5 (SCL). This code features 3 displays - RPM, Full serial information, and binary flags. 
+This code was made for OBD1-compliant Toyotas and Lexuses with the VF1/ENG, TE2, and E1 pins found in the Diagnostic Link Connector. Logic output voltage is never above 5VDC, which is plenty for an Arduino board to handle if operated via USB or +5V on the VIN pin. The display is connected via pins A4 (SDA) and A5 (SCL) and communication takes place serially (I2C). This code features 3 displays - RPM, Full serial information, and binary flags. 
 
 How Toyota's OBD1 system works:
 The Toyota Serial Data Stream is comprised of 31 bits of information: 16 serial identifier bits, 4 OBD1 ID bits, and 11-bit words. We are only focused on the last 11 bits since these contain information about the car's state via the ECU. The ECU puts out 12 words per data stream.
@@ -19,7 +19,7 @@ Here is the information contained in the 12 11-bit data sequence sections:
 * 0x09 & 0x10: N/A
 * 0x11 & 0x12: Additional Binary Flags (Found in menu 3)
 
-Keep in mind that this is not as fast as the OBDII protocol but will still provide real-time data. The delay time is around 1.25 seconds per data frame.
+Keep in mind that this is not as fast as the OBDII protocol but will still provide real-time data. The delay time is around 1.25 seconds per data frame, or about 96 bps!
 
 Great information for your reading and further research pleasure:
 * https://forum.arduino.cc/t/reading-obd-1-data-from-toyota-corrola-1992/231151/39
