@@ -10,6 +10,7 @@
 // get constant data streams from the ECU while the alternator is running, the spark plugs are sparking, etc. Have you ever wondered why your
 // ECU is in a metal box?????
 // Still trying to figure out an isolation circuit, but for now, I believe the problem is solved...
+// 5-15: Optocoupler beta circuit is complete, utilizes 4N25, 1 LED, and 2 1K resistors. Beta testing will commence soon...
 
 
 //Very crucial to include the U8g library or else you won't have any output!!! Wire.h is included within U8g
